@@ -43,7 +43,7 @@ extra_syntaxes_and_themes = []
 
 # The theme to use for code highlighting.
 # See below for list of allowed values.
-highlight_theme = "base16-ocean-dark"
+highlight_theme = "gruvbox-dark"
 
 # The Kita theme style config.
 [extra]
