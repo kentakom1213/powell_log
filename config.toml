@@ -5,8 +5,8 @@ base_url = "https://log.pwll.dev"
 compile_sass = true
 
 # The site title and description; used in feeds by default.
-title = "Powell Log"
-description = "ぱうえるの勉強記録"
+title = "Powell Blog"
+description = "ぱうえるのブログ"
 
 # The default site author.
 author = "powell"
@@ -72,7 +72,7 @@ comment = false
 
 # The profile on home page.
 [extra.profile]
-name = "ぱうえるの勉強記録"
+name = "ぱうえるのブログ"
 bio = ""
 
 # The URL of avatar.
@@ -85,9 +85,9 @@ avatar_url = "icons/powell.svg"
 name = "github"
 url = "https://github.com/kentakom1213"
 
-[[extra.profile.social]]
-name = "link"
-url = "https://pwll.dev/"
+# [[extra.profile.social]]
+# name = "link"
+# url = "https://pwll.dev/"
 
 # [[extra.profile.social]]
 # name = "twitter"

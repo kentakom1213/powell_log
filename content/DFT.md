@@ -6,19 +6,17 @@ description = "FFTを実装したい (1/3)"
 tags = ["FFT"]
 +++
 
-自分が理解するためのメモ書きのようなものなので、以下の記事↓の下位互換のような記事になってます。
+自分が理解するためのメモ書きのようなものなので、以下の記事 ↓ の下位互換のような記事になってます。
 
 ## 参考
 
 - [離散フーリエ変換（DFT）- Cognicull](https://cognicull.com/ja/f5q2jl62)
-- [離散フーリエ変換(DFT)の仕組みを完全に理解する - Qiita](https://qiita.com/TumoiYorozu/items/5855d75a47ef2c7e62c8) ←この説明が好き
-- [高速フーリエ変換FFTを理解する](https://qiita.com/bellbind/items/ba7aa07f6c915d400000)
-
-
+- [離散フーリエ変換(DFT)の仕組みを完全に理解する - Qiita](https://qiita.com/TumoiYorozu/items/5855d75a47ef2c7e62c8) ← この説明が好き
+- [高速フーリエ変換 FFT を理解する](https://qiita.com/bellbind/items/ba7aa07f6c915d400000)
 
 ## 離散フーリエ変換とは
 
-> 離散フーリエ変換では、**時系列データがN個**な場合、区間Nで1/2周期とする周波数を基本に、0倍(定数成分)からN-1倍までの**N個の周波数成分**を算出します。
+> 離散フーリエ変換では、**時系列データが N 個**な場合、区間 N で 1/2 周期とする周波数を基本に、0 倍(定数成分)から N-1 倍までの**N 個の周波数成分**を算出します。
 
 フーリエ変換は、「関数を無限次元のベクトルとみたときの基底変換」と言うことができる。このとき、時間を離散的に（とびとびの値）として表すと、これはただのベクトルの基底変換と言える。
 
@@ -26,21 +24,21 @@ tags = ["FFT"]
 
 ---
 
-フーリエ変換：
+{% admonition(type="note", title="フーリエ変換") %}
 
 - 入力、出力が（複素）関数
 - $F: (\mathbb{C}\mapsto\mathbb{C})\mapsto(\mathbb{C}\mapsto\mathbb{C})$
+  {% end %}
 
-離散フーリエ変換：
+{% admonition(type="note", title="離散フーリエ変換") %}
 
 - 入力、出力が（複素）ベクトル
 - $F: \mathbb{C}^n\mapsto\mathbb{C}^n$
-
-
+  {% end %}
 
 ## 導出
 
-### sin, cosの離散化
+### sin, cos の離散化
 
 $\sin\frac{2k\pi}{N}\theta,\cos\frac{2k\pi}{N}\theta$ をサンプリングし、ベクトルとして表してみる。
 
@@ -103,13 +101,12 @@ $$
 \end{align}
 $$
 
-
-
-#### sin,cosの2つの周波数成分に分解
+#### sin,cos の 2 つの周波数成分に分解
 
 離散フーリエ変換（DFT）の前段階
 
 入力ベクトルを $sin, cos$ の周波数成分にそれぞれ変換する。
+
 $$
 \begin{align}
 	F_C &= CX_{in}\\\\
@@ -122,19 +119,19 @@ $$
 逆離散フーリエ変換（IDFT）の前段階
 
 $sin,cos$ の周波数成分から元のベクトルを合成する。
+
 $$
 \begin{align}
 	X_{out} = \frac{CF_C + SF_S}{N}
 \end{align}
 $$
+
 ※定義より、もとまった係数とサンプリングした三角関数ベクトルの積を合わせるともとのベクトルが再現できる
-
-
-
 
 ### 複素数形式で表示
 
 $W=C+iS$ とおいて新しい行列を考えると、
+
 $$
 W =
 	\left(
@@ -146,14 +143,17 @@ W =
 	\end{array}
 	\right)
 $$
+
 となる。
 
 > オイラーの公式
+>
 > $$
 > e^{i\theta} = \cos\theta + i\sin\theta
 > $$
 
 を用いて、先ほどの $W$ を書き直すと、
+
 $$
 W =
 	\left(
@@ -169,6 +169,7 @@ $$
 ### 離散フーリエ変換（DFT）
 
 $W$ に対して、入力ベクトル $X_{in}$ を作用させると、フーリエ変換後の複素ベクトルが得られる。
+
 $$
 F = W X_{in}
 $$
@@ -176,6 +177,7 @@ $$
 ### 逆離散フーリエ変換（IDFT)
 
 $\overline{W}=C-iS$ とおく。
+
 $$
 \begin{align}
 	X_{out} &= F_C + iF_S\\\\
@@ -183,7 +185,9 @@ $$
 	iF_S &= (iS)X_{in}
 \end{align}
 $$
+
 より、
+
 $$
 \begin{align}
 	X_{out} = \frac{CF_C + \frac{1}{i^2}(iS)(iF_S)}{N} = \frac{CF_C - (iS)(iF_S)}{N}
@@ -224,7 +228,6 @@ Matrix([
     [0, 0, 0, 0]])
 ```
 
-
 $$
 \begin{align}
 	X_{out} &= \frac{CF_C - (iS)(iF_S) - iSF_C + iCF_S}{N}\\\\[5pt]
@@ -232,16 +235,16 @@ $$
 \end{align}
 $$
 
-
 $F = F_C + iF_S$ とおくと、
+
 $$
 \begin{align}
 	X_{out} = \frac{\overline{W}F}{N}
 \end{align}
 $$
 
-
 以上より、
+
 $$
 \begin{align}
 	\text{DFT:}\quad
@@ -250,54 +253,59 @@ $$
 	&X_{out} = \frac{1}{N} \overline{W} F
 \end{align}
 $$
+
 が得られる。
-
-
 
 ## 公式
 
 ### 離散フーリエ変換
 
 $W$ の要素（回転因子） が、
+
 $$
 \begin{align}
 	W_{k,n} = e^{2\pi ik\frac{n}{N}}
 \end{align}
 $$
+
 と表されることを用いて、
+
 $$
 F = WX = \sum_{k=0}^{N-1}X[k]\~ e^{2i\pi k\frac{n}{N}}
 $$
 
-
-
 ### 逆離散フーリエ変換
 
 $\overline{W}$ は
+
 $$
 \begin{align}
 	e^{-i\theta} &= \cos(-\theta) + i\sin(-\theta)\\\\
 	&= \cos\theta - i\sin\theta
 \end{align}
 $$
+
 であることを用いて、
+
 $$
 \begin{align}
 	W_{k,n} = e^{-2\pi kn\frac{n}{N}}
 \end{align}
 $$
+
 よって、
+
 $$
 X = \frac{1}{N}\sum_{n=0}^{N-1} F[n]\~ e^{-2i\pi k\frac{n}{N}}
 $$
 
-
 普通のフーリエ変換の公式
+
 $$
 \hat{f}(\xi) = \int_{-\infty}^{\infty} f(x)e^{-2\pi ix\xi} dx
 $$
-にならって、
 
+にならって、
 
 $$
 \begin{align}
@@ -307,9 +315,8 @@ $$
 	&X = \frac{1}{N}\sum_{n=0}^{N-1} F[n]\~ e^{2i\pi k\frac{n}{N}}
 \end{align}
 $$
-と表記する場合もある。
-**↑以降はこの表記を使います！**
 
+と表記する場合もある。
+**↑ 以降はこの表記を使います！**
 
 **いよいよ高速化です！**
-
