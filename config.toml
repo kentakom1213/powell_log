@@ -85,6 +85,14 @@ avatar_url = "icons/powell.svg"
 name = "github"
 url = "https://github.com/kentakom1213"
 
+[[extra.profile.social]]
+name = "slides"
+url = "https://slides.pwll.dev"
+
+[[extra.profile.social]]
+name = "portfolio"
+url = "https://portfolio.pwll.dev"
+
 # [[extra.profile.social]]
 # name = "link"
 # url = "https://pwll.dev/"

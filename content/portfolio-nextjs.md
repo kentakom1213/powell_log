@@ -43,7 +43,7 @@ Figma でデザインをしました。ポートフォリオサイトらしく�
 
 ページを追加。デザインはこんな感じです。
 
-{{ resize_image(path="/images/portfolio-nextjs/design.png", width=500, height=300, op="fill") }}
+{{ image(path="/images/portfolio-nextjs/design.png", width=700) }}
 
 なるべくシンプルかつかわいいデザインになるように腐心しました。
 
@@ -59,28 +59,28 @@ styled components を利用しています。
 
 どの写真を使うか結構悩みました。
 
-{{ resize_image(path="/images/portfolio-nextjs/about.png", width=500, height=300, op="fill") }}
+{{ image(path="/images/portfolio-nextjs/about.png", width=700) }}
 
 ### [skills ページ](https://kenta-komoto.vercel.app/skills/)
 
 並べるデザインのレスポンシブ対応にちょっと苦労しました。
 このあたりの面倒臭さを考えると、素直に tailwind CSS を使うのがいいのかも。
 
-{{ resize_image(path="/images/portfolio-nextjs/skills2.png", width=500, height=300, op="fill") }}
+{{ image(path="/images/portfolio-nextjs/skills2.png", width=700) }}
 
 ### [experience ページ](https://kenta-komoto.vercel.app/experience/)
 
 このページに一番手がかかっています。
 css の grid の使い方の勉強にもなりました。
 
-{{ resize_image(path="/images/portfolio-nextjs/experience.png", width=500, height=300, op="fill") }}
+{{ image(path="/images/portfolio-nextjs/experience.png", width=700) }}
 
 ### [contact ページ](https://kenta-komoto.vercel.app/contact/)
 
 [formspree](https://formspree.io/)というサービスを利用しました。
 Google フォームの埋め込みとは違い、自分で見た目をカスタマイズできるので便利です。
 
-{{ resize_image(path="/images/portfolio-nextjs/contact.png", width=500, height=300, op="fill") }}
+{{ image(path="/images/portfolio-nextjs/contact.png", width=700) }}
 
 ## デプロイ
 

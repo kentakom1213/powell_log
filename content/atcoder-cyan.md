@@ -29,7 +29,7 @@ cover_image = "/images/atcoder/rating-graph.png"
 
 ### レート 800 ~ 1000
 
-{{ resize_image(path="/images/atcoder/rating-800.png", width=500, height=300, op="fill") }}
+{{ image(path="/images/atcoder/rating-800.png", width=600) }}
 
 #### モチベについて
 
@@ -56,7 +56,7 @@ OrderedSet が欲しいっていう時に詰んでしまう可能性があるの
 
 ### レート 1000 ~ 1200
 
-{{ resize_image(path="/images/atcoder/rating-1000.png", width=500, height=300, op="fill") }}
+{{ image(path="/images/atcoder/rating-1000.png", width=600) }}
 
 #### EDPC
 
@@ -84,7 +84,7 @@ DP は 400~500 点あたりの問題に配置されることが多いので、�
 をこのやり方で解いてみたものですが、
 これでもかというくらい丁寧に書くと、自分の思考の抜け漏れも知ることができかなり有効だと思います。
 
-{{ resize_image(path="/images/atcoder/abc043-D.png", width=500, height=300, op="fill") }}
+{{ image(path="/images/atcoder/abc043-D.png", width=600) }}
 
 自分は考察に Notion を使っているのですが、
 Notion を使って考察する場合は

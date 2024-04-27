@@ -18,12 +18,12 @@ tags = ["FFT"]
 前章の DFT で理解した公式、
 
 $$
-\begin{align}
+\begin{align*}
 	\text{DFT:}\quad
 	&F = \sum_{k=0}^{N-1}X[k]\~ e^{-2i\pi k\frac{n}{N}}\\\\[5pt]
 	\text{IDFT:}\quad
 	&X = \frac{1}{N}\sum_{n=0}^{N-1} F[n]\~ e^{2i\pi k\frac{n}{N}}
-\end{align}
+\end{align*}
 $$
 
 では、変数 $n,k$ に対してそれぞれ操作を行うため、計算量は $O(N^2)$ となってしまう。
@@ -37,9 +37,9 @@ $$
 回転因子 $W_N$ を次のように定義する。
 
 $$
-\begin{align}
+\begin{align*}
 	W_N = e^{-i\frac{2\pi}{N}}
-\end{align}
+\end{align*}
 $$
 
 これは、複素数平面上の点 $1$ を原点 $O$ を中心に $2\pi/N$ だけ回転させたものと考えられる。
@@ -53,9 +53,9 @@ $$
 複素数平面上での回転を考えると、
 
 $$
-\begin{align}
+\begin{align*}
 	W_N^k = W_N^{k\~\text{mod}N}
-\end{align}
+\end{align*}
 $$
 
 #### 回転因子の対称性
@@ -63,9 +63,9 @@ $$
 $N$ が偶数のとき、複素数平面上での位置関係から、
 
 $$
-\begin{align}
+\begin{align*}
 	-W_N^k = W_N^{k\~\text{mod}N/2}
-\end{align}
+\end{align*}
 $$
 
 ### DFT の回転因子を用いた表記
@@ -73,7 +73,7 @@ $$
 $N=8$ の DFT を考える。入力ベクトル $x$ を出力ベクトル $X$ に変換する操作は以下のように表すことができる。
 
 $$
-\begin{align}
+\begin{align*}
 	\left(
 	\begin{array}{c}
 		X_0 \\\\ X_1 \\\\ X_3 \\\\ X_4 \\\\ X_5 \\\\ X_6 \\\\ X_7
@@ -97,15 +97,15 @@ $$
 		x_0 \\\\ x_1 \\\\ x_2 \\\\ x_3 \\\\ x_4 \\\\ x_5 \\\\ x_6 \\\\ x_7
 	\end{array}
 	\right)
-\end{align}
+\end{align*}
 $$
 
-ここで、[[回転因子の周期性]]を用いると、
+ここで、**回転因子の周期性**を用いると、
 
 上の式はこのように変形される。
 
 $$
-\begin{align}
+\begin{align*}
 	\left(
 	\begin{array}{c}
 		X_0 \\\\ X_1 \\\\ X_3 \\\\ X_4 \\\\ X_5 \\\\ X_6 \\\\ X_7
@@ -129,7 +129,7 @@ $$
 		x_0 \\\\ x_1 \\\\ x_2 \\\\ x_3 \\\\ x_4 \\\\ x_5 \\\\ x_6 \\\\ x_7
 	\end{array}
 	\right)
-\end{align}
+\end{align*}
 $$
 
 ## 高速フーリエ変換の導出
@@ -139,7 +139,7 @@ $$
 ### 奇数行
 
 $$
-\begin{align}
+\begin{align*}
 	\left(
 	\begin{array}{c}
 		X_0 \\\\ X_2 \\\\ X_4 \\\\ X_6
@@ -173,13 +173,13 @@ $$
 		x_0 \\\\ x_1 \\\\ x_2 \\\\ x_3 \\\\ x_4 \\\\ x_5 \\\\ x_6 \\\\ x_7
 	\end{array}
 	\right)
-\end{align}
+\end{align*}
 $$
 
 縦線で区切ったときの左右が全く同じ値になっていることがわかる。したがって、
 
 $$
-\begin{align}
+\begin{align*}
 	\left(
 	\begin{array}{c}
 		X_0 \\\\ X_2 \\\\ X_4 \\\\ X_6
@@ -199,7 +199,7 @@ $$
 		x_0 + x_4 \\\\ x_1 + x_5 \\\\ x_2 + x_6 \\\\ x_3 + x_7
 	\end{array}
 	\right)
-\end{align}
+\end{align*}
 $$
 
 と変形できる。
@@ -207,7 +207,7 @@ $$
 ### 偶数行
 
 $$
-\begin{align}
+\begin{align*}
 	\left(
 	\begin{array}{c}
 		X_1 \\\\ X_3 \\\\ X_5 \\\\ X_7
@@ -227,13 +227,13 @@ $$
 		x_0 \\\\ x_1 \\\\ x_2 \\\\ x_3 \\\\ x_4 \\\\ x_5 \\\\ x_6 \\\\ x_7
 	\end{array}
 	\right)
-\end{align}
+\end{align*}
 $$
 
-これを[[回転因子の対称性]]を用いて変形すると、
+これを**回転因子の対称性**を用いて変形すると、
 
 $$
-\begin{align}
+\begin{align*}
 	\left(
 	\begin{array}{c}
 		X_1 \\\\ X_3 \\\\ X_5 \\\\ X_7
@@ -267,13 +267,13 @@ $$
 		x_0 \\\\ x_1 \\\\ x_2 \\\\ x_3 \\\\ x_4 \\\\ x_5 \\\\ x_6 \\\\ x_7
 	\end{array}
 	\right)
-\end{align}
+\end{align*}
 $$
 
 ここで、縦線で区切った左右が $-1$ をかけると等しくなる性質を持っていることがわかる。したがって、
 
 $$
-\begin{align}
+\begin{align*}
 	\left(
 	\begin{array}{c}
 		X_1 \\\\ X_3 \\\\ X_5 \\\\ X_7
@@ -293,13 +293,13 @@ $$
 		x_0 - x_4 \\\\ x_1 - x_5 \\\\ x_2 - x_6 \\\\ x_3 - x_7
 	\end{array}
 	\right)
-\end{align}
+\end{align*}
 $$
 
 となる。また、回転因子の対称性を用いなくても問題ないため、もとにもどすと、
 
 $$
-\begin{align}
+\begin{align*}
 	\left(
 	\begin{array}{c}
 		X_1 \\\\ X_3 \\\\ X_5 \\\\ X_7
@@ -319,13 +319,13 @@ $$
 		x_0 - x_4 \\\\ x_1 - x_5 \\\\ x_2 - x_6 \\\\ x_3 - x_7
 	\end{array}
 	\right)
-\end{align}
+\end{align*}
 $$
 
 ここで、指数法則を用いて列ベクトルから回転因子を取り出すと、
 
 $$
-\begin{align}
+\begin{align*}
 	\left(
 	\begin{array}{c}
 		X_1 \\\\ X_3 \\\\ X_5 \\\\ X_7
@@ -348,7 +348,7 @@ $$
     	W_8^3 (x_3 - x_7)
 	\end{array}
 	\right)
-\end{align}
+\end{align*}
 $$
 
 ### 2x2 行列になったとき
@@ -358,7 +358,7 @@ $$
 ここで、このときの回転因子の行列は
 
 $$
-\begin{align}
+\begin{align*}
 	\left(
 	\begin{array}{cc}
 		W_8^0 & W_8^0\\\\
@@ -372,13 +372,13 @@ $$
 		1 & -1\\\\
 	\end{array}
 	\right)
-\end{align}
+\end{align*}
 $$
 
 よって、ベクトルとの積は
 
 $$
-\begin{align}
+\begin{align*}
 	\left(
 	\begin{array}{cc}
 		1 & 1\\\\
@@ -397,7 +397,7 @@ $$
 		x - y
 	\end{array}
 	\right)
-\end{align}
+\end{align*}
 $$
 
 ### バタフライ演算

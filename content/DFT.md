@@ -49,7 +49,7 @@ $\sin\frac{2k\pi}{N}\theta,\cos\frac{2k\pi}{N}\theta$ をサンプリングし�
 #### sin
 
 $$
-\begin{align}
+\begin{align*}
 	\begin{array}{cccccc}
 		\theta & & 0 & 1 & 2 & 3 \\\\
 		\hline
@@ -58,13 +58,13 @@ $$
     \sin{\frac{4\pi}{4}\theta} & =( & 0 & 0 & 0 & 0 & )\\\\
     \sin{\frac{6\pi}{4}\theta} & =( & 0 & -1 & 0 & 1 & )
   \end{array}
-\end{align}
+\end{align*}
 $$
 
 #### cos
 
 $$
-\begin{align}
+\begin{align*}
 	\begin{array}{cccccc}
 		\theta & & 0 & 1 & 2 & 3 \\\\
 		\hline
@@ -73,13 +73,13 @@ $$
     \cos{\frac{4\pi}{4}\theta} & =( & 1 & -1 & 1 & -1 & )\\\\
     \cos{\frac{6\pi}{4}\theta} & =( & 1 & 0 & -1 & 0 & )
   \end{array}
-\end{align}
+\end{align*}
 $$
 
 #### 行列にする
 
 $$
-\begin{align}
+\begin{align*}
 	S &=
 	\left(
 	\begin{array}{cccc}
@@ -98,7 +98,7 @@ $$
 		1 & 0 & -1 & 0
 	\end{array}
 	\right)
-\end{align}
+\end{align*}
 $$
 
 #### sin,cos の 2 つの周波数成分に分解
@@ -108,10 +108,10 @@ $$
 入力ベクトルを $sin, cos$ の周波数成分にそれぞれ変換する。
 
 $$
-\begin{align}
+\begin{align*}
 	F_C &= CX_{in}\\\\
 	F_S &= SX_{in}
-\end{align}
+\end{align*}
 $$
 
 #### 二つの周波数成分からもとのベクトルを合成
@@ -121,9 +121,9 @@ $$
 $sin,cos$ の周波数成分から元のベクトルを合成する。
 
 $$
-\begin{align}
+\begin{align*}
 	X_{out} = \frac{CF_C + SF_S}{N}
-\end{align}
+\end{align*}
 $$
 
 ※定義より、もとまった係数とサンプリングした三角関数ベクトルの積を合わせるともとのベクトルが再現できる
@@ -179,19 +179,19 @@ $$
 $\overline{W}=C-iS$ とおく。
 
 $$
-\begin{align}
+\begin{align*}
 	X_{out} &= F_C + iF_S\\\\
 	F_C &= CX_{in}\\\\
 	iF_S &= (iS)X_{in}
-\end{align}
+\end{align*}
 $$
 
 より、
 
 $$
-\begin{align}
+\begin{align*}
 	X_{out} = \frac{CF_C + \frac{1}{i^2}(iS)(iF_S)}{N} = \frac{CF_C - (iS)(iF_S)}{N}
-\end{align}
+\end{align*}
 $$
 
 ここで、$SC=O$ であるので、
@@ -229,29 +229,29 @@ Matrix([
 ```
 
 $$
-\begin{align}
+\begin{align*}
 	X_{out} &= \frac{CF_C - (iS)(iF_S) - iSF_C + iCF_S}{N}\\\\[5pt]
 	&= \frac{(C - iS)(F_C + iF_S)}{N}
-\end{align}
+\end{align*}
 $$
 
 $F = F_C + iF_S$ とおくと、
 
 $$
-\begin{align}
+\begin{align*}
 	X_{out} = \frac{\overline{W}F}{N}
-\end{align}
+\end{align*}
 $$
 
 以上より、
 
 $$
-\begin{align}
+\begin{align*}
 	\text{DFT:}\quad
 	&F = WX_{in}\\\\[5pt]
 	\text{IDFT:}\quad
 	&X_{out} = \frac{1}{N} \overline{W} F
-\end{align}
+\end{align*}
 $$
 
 が得られる。
@@ -263,9 +263,9 @@ $$
 $W$ の要素（回転因子） が、
 
 $$
-\begin{align}
+\begin{align*}
 	W_{k,n} = e^{2\pi ik\frac{n}{N}}
-\end{align}
+\end{align*}
 $$
 
 と表されることを用いて、
@@ -279,18 +279,18 @@ $$
 $\overline{W}$ は
 
 $$
-\begin{align}
+\begin{align*}
 	e^{-i\theta} &= \cos(-\theta) + i\sin(-\theta)\\\\
 	&= \cos\theta - i\sin\theta
-\end{align}
+\end{align*}
 $$
 
 であることを用いて、
 
 $$
-\begin{align}
+\begin{align*}
 	W_{k,n} = e^{-2\pi kn\frac{n}{N}}
-\end{align}
+\end{align*}
 $$
 
 よって、
@@ -308,12 +308,12 @@ $$
 にならって、
 
 $$
-\begin{align}
+\begin{align*}
 	\text{DFT:}\quad
 	&F = \sum_{k=0}^{N-1}X[k]\~ e^{-2i\pi k\frac{n}{N}}\\\\[5pt]
 	\text{IDFT:}\quad
 	&X = \frac{1}{N}\sum_{n=0}^{N-1} F[n]\~ e^{2i\pi k\frac{n}{N}}
-\end{align}
+\end{align*}
 $$
 
 と表記する場合もある。

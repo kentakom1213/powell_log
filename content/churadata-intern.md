@@ -69,13 +69,13 @@ CTO の菱沼さんがなぜか VTuber として講師をしており、びっ�
 
 自分たちのチームでは相談の上、以下のようなシステムを設計しました。
 
-{{ resize_image(path="/images/churadata-intern/system-design.png", width=500, height=300, op="fill") }}
+{{ image(path="/images/churadata-intern/system-design.png", width=700) }}
 
 詳細は省略しますが、これを一から組むのはなかなか大変でした。自分はクラウドを触るのが初めてだったので、チームの人に頼り切りでしたが、協力しつつもなんとか完成まで持っていけました。（最終的には Terraform を使って一括でこのクラウド環境を作成できるようにしてくれました。すご）
 
 また、チームのリソース管理には Notion を利用しました。個々人がどのタスクを進めているかを一覧で見られるようにしたり、ドキュメントを整備したりと、チーム開発をスムーズに進めるためのスキルも身につけられたと感じます。
 
-{{ resize_image(path="/images/churadata-intern/gantt.png", width=500, height=300, op="fill") }}
+{{ image(path="/images/churadata-intern/gantt.png", width=700) }}
 
 ### 後半
 
@@ -87,7 +87,7 @@ CTO の菱沼さんがなぜか VTuber として講師をしており、びっ�
 
 ↓ チームで行ったデータモデリングの様子
 
-{{ resize_image(path="/images/churadata-intern/table-design.JPG", width=500, height=300, op="fill") }}
+{{ image(path="/images/churadata-intern/table-design.JPG", width=700) }}
 
 本番データにはところどころ罠が仕組まれており（在庫の数がマイナスになる、など）、いじわるだな〜とは思いつつ、現実のデータを相手にする大変さも実感しました。
 
@@ -117,12 +117,12 @@ CTO の菱沼さんがなぜか VTuber として講師をしており、びっ�
 
 ↓ ポークたまご
 
-{{ resize_image(path="/images/churadata-intern/pork-tamago.JPG", width=400, height=300, op="fill") }}
+{{ image(path="/images/churadata-intern/pork-tamago.JPG", width=500) }}
 
 ↓ シークヮーサーサワー
 
-{{ resize_image(path="/images/churadata-intern/flat-lemon-drink.JPG", width=400, height=300, op="fill") }}
+{{ image(path="/images/churadata-intern/flat-lemon-drink.JPG", width=500) }}
 
 ↓ 沖縄そば
 
-{{ resize_image(path="/images/churadata-intern/okinawa-soba.JPG", width=400, height=300, op="fill") }}
+{{ image(path="/images/churadata-intern/okinawa-soba.JPG", width=500) }}
