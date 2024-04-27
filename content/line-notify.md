@@ -2,7 +2,8 @@
 title = "シェルから簡単にLINE通知しよう！"
 date = "2022-06-26 22:35:00"
 [taxonomies]
-tags = ["プログラミング"]
+category = ["プログラミング"]
+tags = []
 [extra]
 cover_image = "/images/line_notify/notify_mobile.jpeg"
 +++

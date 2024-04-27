@@ -2,6 +2,7 @@
 title = "Pythonで数独を解く"
 date = "2022-04-19 15:43:41"
 [taxonomies]
+category = ["プログラミング"]
 tags = ["アルゴリズム", "Python"]
 +++
 

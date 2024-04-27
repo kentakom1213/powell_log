@@ -2,7 +2,8 @@
 title = "Rust + Axum + Shuttle でAPIサーバ構築"
 date = "2023-03-02 11:43:00"
 [taxonomies]
-tags = ["Rust", "Web開発", "プログラミング"]
+category = ["プログラミング"]
+tags = ["Rust", "Web開発"]
 +++
 
 Rust で API サーバを作成し、デプロイしてみたので共有します。

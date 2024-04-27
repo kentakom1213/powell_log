@@ -2,6 +2,7 @@
 title = "ちゅらデータのインターンに参加しました"
 date = "2023-09-26 20:44:26"
 [taxonomies]
+category = ["プログラミング"]
 tags = ["旅行記"]
 [extra]
 cover_image = "/images/churadata-intern/view-from-plane.JPG"

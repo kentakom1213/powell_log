@@ -3,7 +3,8 @@ title = "高速フーリエ変換（FFT）- 実装編"
 date = "2022-10-04"
 description = "FFTを実装したい (3/3)"
 [taxonomies]
-tags = ["FFT", "アルゴリズム"]
+category = ["FFT"]
+tags = ["数学", "アルゴリズム"]
 +++
 
 FFT の`Python3`での実装を目指します。

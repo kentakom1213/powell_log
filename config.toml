@@ -31,7 +31,10 @@ feed_filename = "atom.xml"
 #       {name = "authors"}, # Basic definition: no feed or pagination
 #     ]
 #
-taxonomies = [{ name = "tags", rss = true, paginate_by = 5 }]
+taxonomies = [
+    { name = "category", rss = true, paginate_by = 10 },
+    { name = "tags", rss = true, paginate_by = 10 },
+]
 
 # Configuration of the Markdown rendering
 [markdown]
@@ -113,6 +116,10 @@ url = "https://portfolio.pwll.dev"
 [[extra.menu]]
 name = "Archive"
 url = "$BASE_URL/archive"
+
+[[extra.menu]]
+name = "Category"
+url = "$BASE_URL/category"
 
 [[extra.menu]]
 name = "Tags"

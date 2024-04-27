@@ -3,7 +3,8 @@ title = "Pythonでマインスイーパー"
 date = "2022-04-16 06:08:24"
 description = "Pythonでshellで遊べるマインスイーパーを作ってみた"
 [taxonomies]
-tags = ["プログラミング", "Python"]
+category = ["プログラミング"]
+tags = ["Python"]
 +++
 
 プログラミングの授業で作ったマインスイーパです。

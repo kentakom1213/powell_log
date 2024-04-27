@@ -2,7 +2,8 @@
 title = "【色変記事】AtCoder水色になりました"
 date = "2023-07-23 19:40:00"
 [taxonomies]
-tags = ["競プロ", "アルゴリズム"]
+category = ["競プロ"]
+tags = ["アルゴリズム"]
 [extra]
 cover_image = "/images/atcoder/rating-graph.png"
 +++

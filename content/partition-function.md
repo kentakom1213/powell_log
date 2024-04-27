@@ -3,7 +3,8 @@ title = "分割数"
 date = "2022-07-02"
 description = ""
 [taxonomies]
-tags = ["競プロ", "アルゴリズム", "プログラミング"]
+category = ["競プロ"]
+tags = ["数学", "アルゴリズム"]
 +++
 
 - 参考：[分割数と、問題まとめ](https://drken1215.hatenablog.com/entry/2018/01/16/222843)
