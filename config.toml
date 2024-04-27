@@ -1,8 +1,8 @@
 # The URL the site will be built for
-base_url = "https://pwll.dev"
+base_url = "https://blog.pwll.dev"
 
 # Whether to automatically compile all Sass files in the sass directory
-compile_sass = true
+# compile_sass = true
 
 # The site title and description; used in feeds by default.
 title = "Powell Blog"
