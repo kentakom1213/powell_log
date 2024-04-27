@@ -3,7 +3,7 @@ title = "Next.jsでポートフォリオサイトを作ってみた"
 date = "2023-04-26 10:00:00"
 updated = "2024-04-27 18:04:42"
 [taxonomies]
-tags = ["Web開発"]
+tags = ["Web開発", "プログラミング"]
 [extra]
 cover_image = "/images/portfolio-nextjs/skills.png"
 +++

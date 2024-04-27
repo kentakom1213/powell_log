@@ -3,7 +3,7 @@ title = "高速フーリエ変換（FFT）- 理論編"
 date = "2022-10-03"
 description = "FFTを実装したい (2/3)"
 [taxonomies]
-tags = ["FFT"]
+tags = ["FFT", "アルゴリズム"]
 +++
 
 ## 参考

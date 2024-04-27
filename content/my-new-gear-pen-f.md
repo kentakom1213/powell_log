@@ -2,7 +2,7 @@
 title = "フィルムカメラを買いました"
 date = "2022-04-27 00:03:30"
 [taxonomies]
-tags = ["カメラ", "写真"]
+tags = ["カメラ"]
 [extra]
 cover_image = "/images/PEN-F/front.jpg"
 +++

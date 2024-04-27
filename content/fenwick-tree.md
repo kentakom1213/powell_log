@@ -3,7 +3,7 @@ title = "Fenwick木（BIT）"
 date = "2022-07-02"
 description = "BITをPythonで実装する"
 [taxonomies]
-tags = ["競プロ", "アルゴリズム", "データ構造"]
+tags = ["競プロ", "アルゴリズム", "データ構造", "プログラミング"]
 +++
 
 # Fewnick Tree

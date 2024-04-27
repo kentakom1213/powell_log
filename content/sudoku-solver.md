@@ -2,7 +2,7 @@
 title = "Pythonで数独を解く"
 date = "2022-04-19 15:43:41"
 [taxonomies]
-tags = ["アルゴリズム"]
+tags = ["アルゴリズム", "Python"]
 +++
 
 Python で数独ソルバーを作ってみました。

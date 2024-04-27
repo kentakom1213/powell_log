@@ -3,7 +3,7 @@ title = "Rustでコレスキー分解"
 date = "2024-04-27"
 description = "Rustでコレスキー分解を実装してみる"
 [taxonomies]
-tags = ["アルゴリズム", "線形代数"]
+tags = ["アルゴリズム", "Rust", "プログラミング"]
 +++
 
 [CMA-ES](https://ja.wikipedia.org/wiki/CMA-ES)を実装したいので，その前段階としてコレスキー分解を実装してみます．

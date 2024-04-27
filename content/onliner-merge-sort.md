@@ -2,7 +2,7 @@
 title = "ワンライナーでマージソートを実装したい（Python3）"
 date = "2022-04-14 10:51:02"
 [taxonomies]
-tags = ["アルゴリズム"]
+tags = ["アルゴリズム", "プログラミング"]
 [extra]
 cover_image = "/images/oneliner-merge-sort/oneliner_merge_sort.jpg"
 +++
