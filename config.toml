@@ -85,16 +85,20 @@ avatar_url = "icons/powell.svg"
 
 # The social icons below the profile on the home page.
 [[extra.profile.social]]
-name = "github"
+name = "./icons/github.svg"
 url = "https://github.com/kentakom1213"
 
 [[extra.profile.social]]
-name = "slides"
+name = "./icons/slides.svg"
 url = "https://slides.pwll.dev"
 
 [[extra.profile.social]]
-name = "portfolio"
+name = "./icons/portfolio.svg"
 url = "https://portfolio.pwll.dev"
+
+[[extra.profile.social]]
+name = "https://img.atcoder.jp/assets/top/img/logo_bk.svg"
+url = "https://atcoder.jp/users/powell"
 
 # [[extra.profile.social]]
 # name = "link"
