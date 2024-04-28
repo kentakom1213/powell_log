@@ -1,13 +1,20 @@
 <div class="text-sm antialiased opacity-60">
   {% if page.date %}
-  <time>{{ page.date | date }}</time>
+  <time>post: {{ page.date | date }}</time>
+  {% endif %}
+  {% if page.updated %}
+  <span class="mx-1">&middot;</span>
+  <time>update: {{ page.updated | date }}</time>
+  {% endif %}
+  <!-- {% if page.reading_time %}
   <span class="mx-1">&middot;</span>
   <span>{{ page.reading_time }}min</span>
-  {% endif %}<!---->
+  {% endif %} -->
+  <!---->
   {% set single_author = page.extra.author | default(value=config.author) %}
   <!---->
-  {% if single_author %}
+  <!-- {% if single_author %}
   <span class="mx-1">&middot;</span>
   <span>{{ single_author }}</span>
-  {% endif %}
+  {% endif %} -->
 </div>
