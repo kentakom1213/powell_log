@@ -151,5 +151,5 @@ reactions_enabled = 0
 emit_metadata = 0
 input_position = "top"
 theme = "light"
-lang = "ja"
+lang = "en"
 loading = "lazy"
