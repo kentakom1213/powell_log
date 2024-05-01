@@ -4,7 +4,9 @@ date = "2022-07-02"
 description = "BITをPythonで実装する"
 [taxonomies]
 category = ["競プロ"]
-tags = ["アルゴリズム", "データ構造"]
+tags = ["アルゴリズム", "データ構造", "Python"]
+[extra]
+comment = true
 +++
 
 # Fewnick Tree

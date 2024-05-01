@@ -118,16 +118,20 @@ url = "https://atcoder.jp/users/powell"
 # url = "$BASE_URL/projects"
 
 [[extra.menu]]
-name = "Archive"
-url = "$BASE_URL/archive"
-
-[[extra.menu]]
 name = "Category"
 url = "$BASE_URL/category"
 
 [[extra.menu]]
 name = "Tags"
 url = "$BASE_URL/tags"
+
+[[extra.menu]]
+name = "Archive"
+url = "$BASE_URL/archive"
+
+[[extra.menu]]
+name = "kyopro"
+url = "$BASE_URL/kyopro"
 
 # The page footer options.
 [extra.footer]
@@ -137,15 +141,15 @@ since = 2022
 
 # The giscus comment options, only available when comment is enabled.
 [extra.giscus]
-repo = ""
-repo_id = ""
-category = ""
-category_id = ""
+repo = "kentakom1213/powell_blog"
+repo_id = "R_kgDOLzhqFw"
+category = "Announcements"
+category_id = "DIC_kwDOLzhqF84CfEbF"
 mapping = "pathname"
 strict = 1
 reactions_enabled = 0
 emit_metadata = 0
 input_position = "top"
 theme = "light"
-lang = "en"
+lang = "ja"
 loading = "lazy"

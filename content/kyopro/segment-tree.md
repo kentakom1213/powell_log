@@ -4,7 +4,9 @@ date = "2022-07-02"
 description = "セグ木をPythonで実装する"
 [taxonomies]
 category = ["競プロ"]
-tags = ["アルゴリズム", "データ構造"]
+tags = ["アルゴリズム", "データ構造", "Python"]
+[extra]
+comment = true
 +++
 
 ### 参考

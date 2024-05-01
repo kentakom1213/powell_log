@@ -4,7 +4,9 @@ date = "2022-10-04"
 description = "FFTを実装したい (3/3)"
 [taxonomies]
 category = ["FFT"]
-tags = ["数学", "アルゴリズム"]
+tags = ["数学", "アルゴリズム", "Python"]
+[extra]
+comment = true
 +++
 
 FFT の`Python3`での実装を目指します。

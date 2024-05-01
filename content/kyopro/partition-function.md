@@ -4,7 +4,9 @@ date = "2022-07-02"
 description = ""
 [taxonomies]
 category = ["競プロ"]
-tags = ["数学", "アルゴリズム"]
+tags = ["数学", "アルゴリズム", "Python"]
+[extra]
+comment = true
 +++
 
 - 参考：[分割数と、問題まとめ](https://drken1215.hatenablog.com/entry/2018/01/16/222843)

@@ -5,6 +5,8 @@ description = "FFTを実装したい (2/3)"
 [taxonomies]
 category = ["FFT"]
 tags = ["数学", "アルゴリズム"]
+[extra]
+comment = true
 +++
 
 ## 参考

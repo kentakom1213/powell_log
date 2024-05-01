@@ -1,7 +1,15 @@
 {% extends "index.html" %}<!---->
 {% block main %}
 <!-- Section Title -->
+{% if section.description %}
+<h1 class="mb-4">{{ section.title }}</h1>
+<!-- Description -->
+<div class="mb-12">
+  {{ section.description }}
+</div>
+{% else %}
 <h1 class="mb-16">{{ section.title }}</h1>
+{% endif %}
 <!-- Pages -->
 {% include "partials/page_list.html" %}<!---->
 {% endblock main %}
