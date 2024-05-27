@@ -48,6 +48,11 @@ extra_syntaxes_and_themes = []
 # See below for list of allowed values.
 highlight_theme = "ayu-mirage"
 
+[slugify]
+paths = "off"
+taxonomies = "off"
+anchors = "off"
+
 # The Kita theme style config.
 [extra]
 # Enable KaTex math formula support globally.
