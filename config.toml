@@ -52,6 +52,8 @@ highlight_theme = "ayu-mirage"
 paths = "off"
 taxonomies = "off"
 anchors = "off"
+# keep paths and dates in the slug
+paths_keep_dates = false
 
 # The Kita theme style config.
 [extra]
