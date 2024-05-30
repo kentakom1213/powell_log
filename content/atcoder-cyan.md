@@ -1,6 +1,6 @@
 +++
 title = "【色変記事】AtCoder水色になりました"
-date = "2023-07-23 19:40:00"
+date = "2023-07-23"
 [taxonomies]
 category = ["競プロ"]
 tags = ["アルゴリズム"]

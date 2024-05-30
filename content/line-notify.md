@@ -1,6 +1,6 @@
 +++
 title = "シェルから簡単にLINE通知しよう！"
-date = "2022-06-26 22:35:00"
+date = "2022-06-26"
 [taxonomies]
 category = ["プログラミング"]
 tags = []

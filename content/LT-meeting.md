@@ -1,6 +1,6 @@
 +++
 title = "LT会で知ったことまとめ"
-date = "2022-05-27 22:35:00"
+date = "2022-05-27"
 [taxonomies]
 category = ["プログラミング"]
 tags = []

@@ -1,6 +1,6 @@
 +++
 title = "解説：ABC048 D - An Ordinary Game"
-date = "2024-04-29 15:00:00"
+date = "2024-04-29"
 draft = true
 [taxonomies]
 category = ["競プロ"]

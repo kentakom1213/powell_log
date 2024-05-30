@@ -1,6 +1,6 @@
 +++
 title = "Pythonでマインスイーパー"
-date = "2022-04-16 06:08:24"
+date = "2022-04-16"
 description = "Pythonでshellで遊べるマインスイーパーを作ってみた"
 [taxonomies]
 category = ["プログラミング"]

@@ -1,6 +1,6 @@
 +++
 title = "Rust + Axum + Shuttle でAPIサーバ構築"
-date = "2023-03-02 11:43:00"
+date = "2023-03-02"
 [taxonomies]
 category = ["プログラミング"]
 tags = ["Rust", "Web開発"]
