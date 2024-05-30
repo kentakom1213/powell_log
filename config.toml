@@ -53,7 +53,7 @@ paths = "off"
 taxonomies = "off"
 anchors = "off"
 # keep paths and dates in the slug
-paths_keep_dates = false
+paths_keep_dates = true
 
 # The Kita theme style config.
 [extra]
