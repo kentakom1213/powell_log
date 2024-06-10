@@ -125,20 +125,20 @@ url = "https://atcoder.jp/users/powell"
 # url = "$BASE_URL/projects"
 
 [[extra.menu]]
-name = "Category"
+name = "category"
 url = "$BASE_URL/category"
 
 [[extra.menu]]
-name = "Tags"
+name = "tags"
 url = "$BASE_URL/tags"
-
-[[extra.menu]]
-name = "Archive"
-url = "$BASE_URL/archive"
 
 [[extra.menu]]
 name = "kyopro"
 url = "$BASE_URL/kyopro"
+
+[[extra.menu]]
+name = "recipe"
+url = "$BASE_URL/recipe"
 
 # The page footer options.
 [extra.footer]
